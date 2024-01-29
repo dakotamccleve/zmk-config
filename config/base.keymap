@@ -20,7 +20,6 @@
 #define MOUSE 6
 
 #include "combos.dtsi"  // requires layer aliases
-#include "mouse.dtsi"
 #include "extra_keys.h"
 
 #define XXX &none
@@ -126,19 +125,19 @@ ZMK_BEHAVIOR(num_dance, tap_dance,
 };
 
 // smart-mouse, requires PR #1366
-ZMK_BEHAVIOR(smart_mouse, tri_state,
-    bindings = <&tog MOUSE>, <&none>, <&tog MOUSE>;
-    ignored-key-positions = <LT1 LT3 RT1 RT2 RT3 RM1 RM2 RM3 RH0 RH1>;
-    ignored-layers = <MOUSE>;
-)
+// ZMK_BEHAVIOR(smart_mouse, tri_state,
+//    bindings = <&tog MOUSE>, <&none>, <&tog MOUSE>;
+//    ignored-key-positions = <LT1 LT3 RT1 RT2 RT3 RM1 RM2 RM3 RH0 RH1>;
+//    ignored-layers = <MOUSE>;
+//)
 
 /* Custom behaviors */
 
 // Alt+Tab swapper, requires PR #1366
-ZMK_BEHAVIOR(swapper, tri_state,
-    bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-    ignored-key-positions = <LT2>;
-)
+//ZMK_BEHAVIOR(swapper, tri_state,
+//    bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+//    ignored-key-positions = <LT2>;
+//)
 
 // Sticky layer + sticky shift (workaround for issue #1421)
 ZMK_BEHAVIOR(sls, sticky_key,
@@ -294,7 +293,7 @@ ZMK_LAYER(uc,
     X_LH                                               ___           ___             X_MH     ___           ___                                                       X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰───────────────────────────╯                                           ╰──────╯
 )
-
+/*
 ZMK_LAYER(mouse,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
     X_LT     ___           ___           ___           ___           ___             X_MT     ___           U_WH_D        U_MS_U         U_WH_U       ___             X_RT
@@ -306,5 +305,6 @@ ZMK_LAYER(mouse,
     X_LH                                               ___           ___             X_MH     U_BTN2        U_BTN1                                                    X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
 )
+*/
 
 /* vim: set ft=c tw=174: */

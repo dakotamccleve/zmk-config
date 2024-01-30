@@ -7,3 +7,5 @@
 
 /* source the main keymap */
 #include "base.keymap"
+
+/ { chosen { zmk,matrix-transform = &default_transform; }; };

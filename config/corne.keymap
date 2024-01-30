@@ -3,16 +3,16 @@
 
 /* map Corne's extra keys */
 //left hand
-#define X_LT  &kp z       // top row
-#define X_LM  &kp z       // middle row
-#define x_LB  &kp z       // bottom row
+#define X_LT  &kp Z       // top row
+#define X_LM  &kp Z       // middle row
+#define x_LB  &kp Z       // bottom row
 #define X_LH  &bs_del     // thumb row
 
 //right hand
 #define X_RH  &bs_del     // thumb row
-#define X_RT  &kp z       // top row
-#define X_RM  &kp z       // middle row
-#define x_RB  &kp z       // bottom row
+#define X_RT  &kp Z       // top row
+#define X_RM  &kp Z       // middle row
+#define x_RB  &kp Z       // bottom row
 
 /* activate bluetooth */
 #define CONFIG_WIRELESS 1

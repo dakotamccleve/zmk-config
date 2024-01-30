@@ -1,8 +1,7 @@
 /* source keypos definitions */
 #include "../zmk-nodefree-config/keypos_def/keypos_42keys.h"
 
-/* map Zen's extra keys */
-#define X_LH  &smart_mouse  // thumb row, left
+/* map Corne's extra keys */
 #define X_RH  &bs_del       // thumb row, right
 
 /* activate bluetooth */

@@ -2,7 +2,17 @@
 #include "../zmk-nodefree-config/keypos_def/keypos_42keys.h"
 
 /* map Corne's extra keys */
-#define X_RH  &bs_del       // thumb row, right
+//left hand
+#define X_LT  &kp z       // top row
+#define X_LM  &kp z       // middle row
+#define x_LB  &kp z       // bottom row
+#define X_LH  &bs_del     // thumb row
+
+//right hand
+#define X_RH  &bs_del     // thumb row
+#define X_RT  &kp z       // top row
+#define X_RM  &kp z       // middle row
+#define x_RB  &kp z       // bottom row
 
 /* activate bluetooth */
 #define CONFIG_WIRELESS 1

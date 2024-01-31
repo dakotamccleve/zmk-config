@@ -188,13 +188,6 @@ ZMK_BEHAVIOR(copy_cut, tap_dance,
     bindings = <&kp LC(INS)>, <&kp LC(X)>;
 )
 
-// Windows sleep key
-ZMK_BEHAVIOR(win_sleep, macro,
-    wait-ms = <500>;
-    tap-ms = <50>;
-    bindings = <&kp LG(X) &kp U &kp S>;
-)
-
 // misc aliases
 #define CANCEL      &kp K_CANCEL             // cancel caps-word and num-word
 #define WIN_MNGR    &hmr RSHFT LG(W)
@@ -209,7 +202,7 @@ ZMK_LAYER(base,
 //├────────────┼────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp LC(V)    &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G            &kp M         &hmr RSHFT N  &hmr LCTRL E  &hmr LALT I   &hmr LGUI O   &kp PSCRN
 //├────────────┼────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    copy_cut     &kp Z         &kp X         &kp C         &kp D         &kp V            &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        XXX
+    &copy_cut    &kp Z         &kp X         &kp C         &kp D         &kp V            &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        XXX
 //╰────────────┼────────────┼─────────────┴─────────────┼─────────────┼─────────────┤  ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴─────────────╯
                                              &kp TAB       &lt_spc NAV 0 &lt FN RET       SMART_NUM     &smart_shft   NAV_BSPC
 //                                        ╰─────────────┴─────────────┴─────────────╯  ╰─────────────┴─────────────┴─────────────╯

@@ -21,8 +21,6 @@
 #define MABI 5
 #define MABIFUNC 6
 
-#include "combos.dtsi"  // requires layer aliases
-
 #define XXX &none
 #define ___ &trans
 

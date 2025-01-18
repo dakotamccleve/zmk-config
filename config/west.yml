@@ -1,11 +1,17 @@
 manifest:
   remotes:
-    - name: zmk
-      url-base: https://github.com/dakotamccleve
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: urob
+      url-base: https://github.com/urob
+
   projects:
     - name: zmk
-      remote: zmk
+      remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: zmk-helpers
+      remote: urob
+      revision: main
   self:
     path: config
